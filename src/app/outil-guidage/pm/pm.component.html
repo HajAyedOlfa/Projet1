@@ -1,0 +1,81 @@
+<div id="wrapper">
+
+    <div id="main-content">
+      <div class="container-fluid">
+        <div class="block-header">
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+              <h2>Tableau de bord Process Mining</h2>
+            </div>
+  
+          </div>
+        </div>
+        <hr>
+        <p> Que voulez-vous avoir comme type de visualisation pour le Process Mining ?</p>
+
+        <div class="row clearfix">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="body text-center">
+                <label class="texte1">Les graphiques de Process Mining </label>
+                <div class="form-group">
+                  <label class="fancy-checkbox">
+                    <div class="partie1">
+                        <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                        <span class="text2Chekbox">Process Map</span>
+                    </div>
+                    <div class="partie2">
+                        <button (click)="ProcessMapMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                    </div>
+                    </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span class="text2Chekbox">Social Network</span><button (click)="SocialNetworkMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span class="text2Chekbox">Chord Diagram</span><button (click)="ChordDiagMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Process Logo</span><button (click)="ProcessLogoMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span class="text2Chekbox">Trace Varients</span><button (click)="TraceVMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span class="text2Chekbox">Trace Aligned</span><button (click)="TraceAMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span class="text2Chekbox">Spiderweb Diagram</span><button (click)="SpiderDMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span class="text2Chekbox">Trace Pattern</span><button (click)="TracePatern()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label>
+            
+                  
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+          
+        
+  
+        </div>
+        
+        <button type="button" class="btn btn-outline-info">Confirmer</button>
+  
+  
+  
+      </div>
+    </div>
+  
+  </div>
+  

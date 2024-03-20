@@ -1,0 +1,18 @@
+#left-sidebar {
+    margin-top: 0;
+}
+img.logo {
+    /* vertical-align: middle; */
+    /* border-style: none; */
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+p.navigation{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

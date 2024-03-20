@@ -1,0 +1,168 @@
+<app-sidebarre></app-sidebarre>
+<div id="wrapper">
+    <div id="main-content">
+      <div class="container-fluid">
+        <div class="block-header">
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+              <h2>Tableau de bord Business Intelligence</h2>
+            </div>
+  
+          </div>
+        </div>
+        <hr>
+        <p> Que voulez-vous avoir comme type de visualisation pour le Business Intelligence ?</p>
+        <div class="row clearfix">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les diagrammes de types KPIs</label>
+                  <br>
+                  <label class="">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-multiple="checkbox">
+                      <span>Carte</span><button (click)="carteMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Carte à plusieurs lignes</span><button (click)="carteLigneMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Jauge</span><button (click)="jaugeMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>KPI</span><button (click)="KPIMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les diagrammes </label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Diagramme à barre</span><button (click)="DiagMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Pie Chart</span><button (click)="PieChartMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                
+                  
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les courbes </label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Courbe</span><button (click)="courbeMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Aire</span><button (click)="AireMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="row clearfix">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les tableaux</label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Tableau</span><button (click)="tableauMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Matrice</span><button (click)="matriceMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les Histogrammes </label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Histogramme</span><button (click)="histogrammeMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Box Plot</span><button (click)="boxPlotMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                
+                  
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Tree Map / Géolocalisation </label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Tree Map</span><button (click)="treeMapMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Géolocalisation</span><button (click)="geoMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <button type="button" class="btn btn-outline-info">Confirmer</button>
+  
+  
+  
+      </div>
+    </div>
+  
+  </div>
+  

@@ -1,0 +1,98 @@
+<div id="wrapper">
+
+    <div id="main-content">
+      <div class="container-fluid">
+        <div class="block-header">
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+              <h2>Tableau de bord Data Mining</h2>
+            </div>
+  
+          </div>
+        </div>
+        <hr>
+        <p> Que voulez-vous avoir comme type de visualisation pour le Data Mining ?</p>
+
+        <div class="row clearfix">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les diagrammes de types Data Visualisation</label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Graphique Linéaire</span><button (click)="graphLMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Bar Chart</span><button (click)="barCharteMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Pie Chart</span><button (click)="PieChartDMMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Tableau</span><button (click)="tableauMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Scatter Plot</span><button (click)="scatterPlotMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Bubble Chart</span><button (click)="bubbleChart()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label>
+                  
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="body text-center">
+                <div class="form-group">
+                  <label class="texte1">Les diagrammes de type Information Visualisation </label>
+                  <br>
+                  <label class="fancy-checkbox">
+                      <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                      <span>Tree Map</span><button (click)="treeMapMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Time Line </span><button (click)="TimeLineMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Semantic Network </span><button (click)="SemanticNetworkMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label><br>
+                  <label class="fancy-checkbox">
+                    <input (change)="onCheked($event)" type="checkbox" name="checkbox" required="" data-parsley-errors-container="#error-checkbox" data-parsley-multiple="checkbox">
+                    <span>Decision Tree </span><button (click)="DecisionTreeMethod()" type="button" class="btn btn-sm btn-outline-secondary" title="Edit"><i class=" icon-eye"></i></button>
+                  </label>
+                
+                  
+                  <p id="error-checkbox"></p>
+              </div>
+               
+                 
+              </div>
+            </div>
+          </div>
+        
+  
+        </div>
+        
+        <button type="button" class="btn btn-outline-info">Confirmer</button>
+  
+  
+  
+      </div>
+    </div>
+  
+  </div>
+  

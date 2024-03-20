@@ -1,0 +1,10 @@
+button.btn.btn-outline-info {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+div#main-content {
+    margin-top: 5px;
+}

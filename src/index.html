@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MonProjet</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="Lucid Bootstrap 4.1.1 Admin Template">
+  <meta name="author" content="WrapTheme, design by: ThemeMakker.com">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico"><link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="./assets/assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/font-awesome/css/font-awesome.min.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./assets/assets/vendor/sweetalert/sweetalert.css"/>
+  <link rel="stylesheet" href="./assets/light/assets/css/main.css">
+  <link rel="stylesheet" href="./assets/light/assets/css/color_skins.css">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="./assets/assets/vendor/chartist/css/chartist.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/toastr/toastr.min.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./assets/light/assets/css/main.css">
+  <link rel="stylesheet" href="./assets/light/assets/css/color_skins.css">
+  <!-- VENDOR CSS -->
+  <link rel="stylesheet" href="./assets/assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-steps/jquery.steps.css">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./assets/light/assets/css/blog.html">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/sweetalert/sweetalert.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
+  <link rel="stylesheet" href="./assets/assets/vendor/sweetalert/sweetalert.css"/>
+  <meta charset="utf-8">
+
+
+
+  <style>
+    td.details-control {
+      background: url('./assets/assets/images/details_open.png') no-repeat center center;
+      cursor: pointer;
+    }
+    tr.shown td.details-control {
+      background: url('./assets/assets/images/details_close.png') no-repeat center center;
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="theme-cyan mat-typography">
+
+  <!-- Javascript -->
+  <script src="./assets/light/assets/bundles/libscripts.bundle.js"></script>
+  <script src="./assets/light/assets/bundles/vendorscripts.bundle.js"></script>
+
+  <script src="./assets/light/assets/bundles/chartist.bundle.js"></script>
+  <script src="./assets/light/assets/bundles/knob.bundle.js"></script> <!-- Jquery Knob-->
+  <script src="./assets/light/assets/bundles/flotscripts.bundle.js"></script> <!-- flot charts Plugin Js -->
+  <script src="./assets/assets/vendor/toastr/toastr.js"></script>
+  <script src="./assets/assets/vendor/flot-charts/jquery.flot.selection.js"></script>
+
+  <script src="./assets/light/assets/bundles/mainscripts.bundle.js"></script>
+  <script src="./assets/light/assets/js/index.js"></script>
+  <script src="./assets/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+
+
+  <script src="./assets/light/assets/bundles/datatablescripts.bundle.js"></script>
+  <script src="./assets/assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+  <script src="./assets/assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+  <script src="./assets/assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+  <script src="./assets/assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
+  <script src="./assets/assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
+
+  <script src="./assets/assets/vendor/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
+  <script src="./assets/assets/vendor/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
+  <!--<script src="./assets/light/assets/js/pages/tables/jquery-datatable.js"></script>-->
+
+  <script src="./assets/light/assets/js/pages/tables/jquery-datatable.js"></script>
+  <script src="./assets/assets/vendor/sweetalert/sweetalert.min.js"></script>
+  <script src="./assets/light/assets/js/pages/ui/dialogs.js"></script>
+
+  <script src="./assets/assets/vendor/jquery-validation/jquery.validate.js"></script> <!-- Jquery Validation Plugin Css -->
+  <script src="./assets/assets/vendor/jquery-steps/jquery.steps.js"></script> <!-- JQuery Steps Plugin Js -->
+  <script src="./assets/light/assets/js/pages/forms/form-wizard.js"></script>
+
+  <script src="./assets/assets/vendor/jquery-knob/jquery.knob.min.js"></script> <!-- Jquery Knob Plugin Js -->
+  <script src="./assets/light/assets/js/pages/charts/jquery-knob.js"></script>
+  <script src="./assets/assets/vendor/flot-charts/jquery.flot.time.js"></script>
+  <script src="./assets/assets/vendor/flot-charts/jquery.flot.selection.js"></script>
+  <script src="./assets/light/assets/js/pages/charts/flot.js"></script>
+
+
+
+
+  <script>
+    $(function () {
+      $('.knob').knob({
+        draw: function () {
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.star').on('click', function () {
+        $(this).toggleClass('star-checked');
+      });
+
+      $('.ckbox label').on('click', function () {
+        $(this).parents('tr').toggleClass('selected');
+      });
+
+      $('.btn-filter').on('click', function () {
+        var $target = $(this).data('target');
+        if ($target != 'all') {
+          $('.table tr').css('display', 'none');
+          $('.table tr[data-status="' + $target + '"]').fadeIn('slow');
+        } else {
+          $('.table tr').css('display', 'none').fadeIn('slow');
+        }
+      });
+
+
+    });
+
+
+      $(document).ready(function(){
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+      $('body,html').animate({
+      scrollTop: 0
+    }, 400);
+      return false;
+    });
+    });
+  </script>
+
+  <script>
+    function Afficher()
+    {
+      var input = document.getElementById("motdepasse");
+      if (input.type === "password")
+      {
+        input.type = "text";
+      }
+      else
+      {
+        input.type = "password";
+      }
+    }
+  </script>
+  <script>
+    function Afficher1()
+    {
+      var input = document.getElementById("motdepasse1");
+      if (input.type === "password")
+      {
+        input.type = "text";
+      }
+      else
+      {
+        input.type = "password";
+      }
+    }
+  </script>
+
+  <app-root></app-root>
+
+</body>
+</html>

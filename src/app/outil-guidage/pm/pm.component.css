@@ -1,0 +1,18 @@
+div#main-content {
+    margin-top: 5px;
+}
+
+button.btn.btn-outline-info {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+label.fancy-checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+label.texte1 {
+    margin-bottom: 30px;
+}
